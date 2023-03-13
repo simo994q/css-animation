@@ -7,7 +7,7 @@
 
 html::-webkit-scrollbar {
     display: none;
-  }
+}
 
 :root {
     --yellow: #F1DE67;
@@ -45,3 +45,15 @@ main {
 #gallery img {
     width: 25%;
 }
+
+
+
+
+
+h2 {
+    width: 100%;
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 1rem 0;
+}
+
