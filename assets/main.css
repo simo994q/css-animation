@@ -5,8 +5,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 :root {
     --yellow: #F1DE67;
+html::-webkit-scrollbar {
+    display: none;
+  }
+
+:root {
+    --yellow: #F1DE67;
+    --gray: #707070;
 }
 
 img {
@@ -39,4 +47,29 @@ img {
 
 .showImage{
 opacity: 1;
+}
+header {
+    width: 100vw;
+    background-color: var(--yellow);
+    height: 200px;
+    border: 6px solid var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+#gallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 1.5rem;
+}
+
+#gallery img {
+    width: 25%;
 }
