@@ -12,6 +12,7 @@ html::-webkit-scrollbar {
 body {
     height: 100vh;
 }
+
 :root {
     --yellow: #F1DE67;
     --gray: #707070;
@@ -62,17 +63,19 @@ h2 {
     font-size: 2.2rem;
     cursor: pointer;
 }
+
 .sectionText {
-    /* padding: 1rem; */
     background-color: var(--yellow);
     margin-bottom: 2rem;
     font-size: 1.2rem;
     height: 0px;
     overflow: hidden;
+    transition: height, padding, 500ms ease;
 }
 
 .textShow {
-    height: 200px;
+    height: 150px;
+    padding: 1rem;
 }
 
 
@@ -89,6 +92,7 @@ h2 {
     text-align: center;
     padding: 1rem 0;
     font-size: 1.1rem;
+    border-top: 4px solid var(--gray);
 }
 
 
@@ -99,7 +103,7 @@ h2 {
 
 
 
-.fadeImg{
+.fadeImg {
     width: 200px;
     height: 200px;
     display: inline-block;
@@ -107,16 +111,18 @@ h2 {
 }
 
 
-.imageLoadOne{
+.imageLoadOne {
     transition: opacity 500ms ease;
 }
-.imageLoadTwo{
+
+.imageLoadTwo {
     transition: opacity 750ms ease 1s;
 }
-.imageLoadThree{
+
+.imageLoadThree {
     transition: opacity 1000ms ease 2s;
 }
 
-.showImage{
-opacity: 1;
+.showImage {
+    opacity: 1;
 }

@@ -15,6 +15,10 @@ const button = document.getElementById('showButton');
 const text = document.getElementsByClassName('sectionText');
 
 button.addEventListener('click', () => {
-    text.classList.toggle('textShow')
     console.log(3);
+    console.log(text);
+    for (const myElements of text){
+        myElements.classList.toggle('textShow');
+    };
+    // text.classList.toggle('textShow')
 })
