@@ -5,11 +5,33 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+  }
+
 :root {
     --yellow: #F1DE67;
+    --gray: #707070;
 }
 
 img {
     display: block;
     width: 100%;
+}
+
+
+
+header {
+    width: 100vw;
+    background-color: var(--yellow);
+    height: 200px;
+    border: 6px solid var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
