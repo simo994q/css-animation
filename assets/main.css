@@ -16,7 +16,6 @@ html::-webkit-scrollbar {
 
 img {
     display: block;
-    width: 100%;
 }
 
 
@@ -31,7 +30,18 @@ header {
     align-items: center;
 }
 
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
 #gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 1.5rem;
+}
+
+#gallery img {
+    width: 25%;
 }
