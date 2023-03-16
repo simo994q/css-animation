@@ -1,6 +1,6 @@
-const header = document.getElementById('header')
+const header = document.getElementsByClassName('header')
 const myFadeImg = document.getElementsByClassName("fadeImg");
-const aboutSection = document.getElementById('omDeGule')
+const aboutSection = document.getElementsByClassName('omDeGule')
 const footer = document.getElementById('footer')
 
 
@@ -9,8 +9,12 @@ window.addEventListener('load', () => {
     for (const myElements of myFadeImg){
         myElements.classList.toggle('showImage');
     };
-    header.classList.add('headerAnimate')
-    aboutSection.classList.add('boxAnimate')
+    for (const myElements of header){
+        myElements.classList.add('headerAnimate')
+    };
+    for (const myElements of aboutSection){
+        myElements.classList.add('boxAnimate')
+    }
     footer.classList.add('footerAnimate')
 
 });

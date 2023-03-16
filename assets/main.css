@@ -21,7 +21,7 @@ img {
 
 
 
-header {
+.header {
     width: 100vw;
     background-color: var(--yellow);
     height: 200px;
@@ -69,6 +69,10 @@ h2 {
     padding: 1rem;
 }
 
+
+.omDeGule{
+    margin-top: 140px;
+}
 
 
 
@@ -122,19 +126,22 @@ footer {
 .headerAnimate{
     animation-name: headerAnimate;
     animation-duration: 1s;
-    animation-delay: 500ms;
 }
 
 .boxAnimate{
+    opacity: 0;
     animation-name: footerAnimate;
     animation-duration: 1s;
     animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 .footerAnimate{
+    opacity: 0;
     animation-name: boxAnimate;
     animation-duration: 1s;
     animation-delay: 3.5s;
+    animation-fill-mode: forwards;
 }
 
 
