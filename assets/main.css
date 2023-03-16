@@ -139,3 +139,39 @@ footer {
         padding: 1rem;
     }
 }
+
+
+@keyframes headerAnimate{
+    0%{ 
+        opacity: 0;
+        transform: translateY(-400px)
+    };
+
+    100%{
+        opacity: 100;
+        transform: translateY(400px);
+    };
+
+}
+
+@keyframes boxAnimate{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes footerAnimate{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 100;
+        transform: translateY(-100px);
+    }
+}
