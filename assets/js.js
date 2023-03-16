@@ -33,4 +33,26 @@ button.addEventListener('click', () => {
     };
 })
 
+// Nyhedsbrev
 
+
+const emailInput = document.getElementById("email-input");
+const validateBtn = document.getElementById("btn");
+const labelEmail = document.getElementById("label01");
+
+validateBtn.addEventListener("click", function() {
+  const email = emailInput.value;
+  const regex = /\S+@\S+\.\S+/;
+
+  if (regex.test(email)) {
+    emailInput.classList.remove("error");
+    emailInput.classList.add("success");
+    validateBtn.style.opacity = 0;
+    emailInput.style.opacity = 0;
+    labelEmail.style.opacity = 0;
+    emailInput.insertAdjacentHTML("afterend", "<p>Tak for tilmelding</p>");
+  } else {
+    emailInput.classList.remove("success");
+    emailInput.classList.add("error");
+  }
+});
