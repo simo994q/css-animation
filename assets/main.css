@@ -119,6 +119,31 @@ footer {
     opacity: 1;
 }
 
+.headerAnimate{
+    animation-name: headerAnimate;
+    animation-duration: 1s;
+    animation-delay: 500ms;
+}
+
+.boxAnimate{
+    animation-name: footerAnimate;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+.footerAnimate{
+    animation-name: boxAnimate;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 550px) {
     #gallery {

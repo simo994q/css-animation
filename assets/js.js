@@ -9,9 +9,9 @@ window.addEventListener('load', () => {
     for (const myElements of myFadeImg){
         myElements.classList.toggle('showImage');
     };
-    header.classList.add('')
-    aboutSection.classList.add('')
-    footer.classList.add('')
+    header.classList.add('headerAnimate')
+    aboutSection.classList.add('boxAnimate')
+    footer.classList.add('footerAnimate')
 
 });
 
@@ -24,3 +24,5 @@ button.addEventListener('click', () => {
         myElements.classList.toggle('textShow');
     };
 })
+
+
