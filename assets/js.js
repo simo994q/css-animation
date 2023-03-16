@@ -54,7 +54,7 @@ const emailInput = document.getElementById("email-input");
 const validateBtn = document.getElementById("btn");
 const form = document.getElementById('form')
 
-validateBtn.addEventListener("click", function() {
+validateBtn.addEventListener("click", function(event) {
   const email = emailInput.value;
   const regex = /\S+@\S+\.\S+/;
 
