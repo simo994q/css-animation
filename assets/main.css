@@ -65,7 +65,7 @@ h2 {
 }
 
 .textShow {
-    min-height: 150px;
+    height: 150px;
     padding: 1rem;
 }
 
@@ -135,7 +135,7 @@ footer {
         position: sticky;
     }
     .textShow {
-        min-height: 250px;
+        height: 250px;
         padding: 1rem;
     }
 }
