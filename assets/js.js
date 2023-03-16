@@ -23,5 +23,4 @@ button.addEventListener('click', () => {
     for (const myElements of text){
         myElements.classList.toggle('textShow');
     };
-    // text.classList.toggle('textShow')
 })
