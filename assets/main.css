@@ -45,12 +45,14 @@ main {
 }
 
 
+
+
 .goodSection {
     margin: auto;
     margin-bottom: 2rem;
     max-width: 800px;
 }
-#goodList {
+.goodList {
     background-color: var(--yellow);
     padding-left: 3rem;
 }
