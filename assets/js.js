@@ -2,6 +2,7 @@ const header = document.getElementsByClassName('header')
 const myFadeImg = document.getElementsByClassName("fadeImg");
 const aboutSection = document.getElementsByClassName('omDeGule')
 const footer = document.getElementById('footer')
+const goodSection = document.getElementsByClassName('goodSection')
 
 
 window.addEventListener('load', () => {
@@ -12,10 +13,13 @@ window.addEventListener('load', () => {
     for (const myElements of header){
         myElements.classList.add('headerAnimate')
     };
-    for (const box of aboutSection){
-        box.classList.add('boxAnimate')
+    for (const myElements of aboutSection){
+        myElements.classList.add('boxAnimate')
     }
     footer.classList.add('footerAnimate')
+    for (const myElements of goodSection){
+        myElements.classList.add('boxAnimate')
+    }
 
 });
 
