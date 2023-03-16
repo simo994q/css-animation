@@ -12,8 +12,8 @@ window.addEventListener('load', () => {
     for (const myElements of header){
         myElements.classList.add('headerAnimate')
     };
-    for (const myElements of aboutSection){
-        myElements.classList.add('boxAnimate')
+    for (const box of aboutSection){
+        box.classList.add('boxAnimate')
     }
     footer.classList.add('footerAnimate')
 
