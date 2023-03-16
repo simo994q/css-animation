@@ -1,3 +1,5 @@
+
+/* Hvis du ikke forstår koden, så start med at prøve og læse den =^) */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -47,19 +49,52 @@ main {
 
 
 
+
 .goodSection {
     margin: auto;
     margin-bottom: 2rem;
     max-width: 800px;
 }
+
 .goodList {
     background-color: var(--yellow);
     padding-left: 3rem;
+    height: 0;
+    overflow: hidden;
+    transition: height, 500ms ease;
+}
+
+.listShow {
+    height: 260px;
 }
 
 .goodElement {
     font-size: 1.5rem;
     padding: 1rem;
+
+}
+.goodElementShow {
+    transform: translateX(100%);
+    opacity: 0;
+    animation: fade-in 1s forwards;
+}
+
+
+
+.goodElementShow:nth-of-type(1) {
+    transition: all, 500ms ease-in 0.5s;
+}
+
+.goodElementShow:nth-of-type(2) {
+    transition: all, 500ms ease-in 0.6s;
+}
+
+.goodElementShow:nth-of-type(3) {
+    transition: all, 500ms ease-in 0.7s;
+}
+
+.goodElementShow:nth-of-type(4) {
+    transition: all, 500ms ease-in 0.8s;
 }
 
 
@@ -80,7 +115,7 @@ h2 {
     max-width: 800px;
     margin: auto;
     background-color: var(--yellow);
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     font-size: 1.2rem;
     height: 0px;
     overflow: hidden;
@@ -93,6 +128,56 @@ h2 {
 }
 
 
+.nyhedsBrev {
+    background-color: var(--yellow);
+    border: 4px solid var(--gray);
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+.nyhedsBrev h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    margin-bottom: 1rem;
+
+  }
+
+  #email-input {
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+  }
+
+  #btn {
+    border-radius: 0 30px 30px 0;
+    background-color: var(--gray);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #FFF;
+  }
+
+  #btn:hover {
+    background-color: #0062cc;
+  }
+
+  #label01 {
+    margin-right: 10px;
+  }
 
 
 footer {
@@ -142,12 +227,12 @@ footer {
     transform: scale(1);
 }
 
-.headerAnimate{
+.headerAnimate {
     animation-name: headerAnimate;
     animation-duration: 1s;
 }
 
-.boxAnimate{
+.boxAnimate {
     opacity: 0;
     animation-name: footerAnimate;
     animation-duration: 1s;
@@ -155,7 +240,7 @@ footer {
     animation-fill-mode: forwards;
 }
 
-.footerAnimate{
+.footerAnimate {
     opacity: 0;
     animation-name: boxAnimate;
     animation-duration: 1s;
@@ -163,27 +248,16 @@ footer {
     animation-fill-mode: forwards;
 }
 
-.hvadErViGodeTil{
+.hvadErViGodeTil {
     animation-name: hvadErViGodeTil;
     animation-duration: 1s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-.nyhedsBrev {
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-}
 
-.success {
-    border: 2px solid green;
-  }
-  
-  .error {
-    border: 2px solid red;
-    animation: shake 0.5s;
-  }
+
+
 
 
 
@@ -198,9 +272,11 @@ footer {
     #gallery img {
         width: 100%;
     }
+
     footer {
         position: sticky;
     }
+
     .textShow {
         height: 250px;
         padding: 1rem;
@@ -208,56 +284,64 @@ footer {
 }
 
 
-@keyframes headerAnimate{
-    0%{ 
+@keyframes headerAnimate {
+    0% {
         opacity: 0%;
         transform: translateY(-400px)
-    };
+    }
 
-    100%{
+    ;
+
+    100% {
         opacity: 100%;
         transform: translateY(400px);
-    };
+    }
+
+    ;
 
 }
 
-@keyframes boxAnimate{
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 100%;
-    }
-}
-
-@keyframes footerAnimate{
-    0%{
-        opacity: 0;
-        transform: translateX(1200px);
-    }
-
-    100%{
-        opacity: 100;
-        
-    }
-}
-
-@keyframes hvadErViGodeTil{
+@keyframes fade-in {
     0% {
+        transform: translateX(100%);
         opacity: 0;
-        transform: translateX(-1200px);
     }
-    100%{
+
+    100% {
+        transform: translateX(0);
         opacity: 1;
     }
 }
 
-@keyframes shake {
-    0% { transform: translateX(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-    20%, 40%, 60%, 80% { transform: translateX(10px); }
-    100% { transform: translateX(0); }
-  }
-  
-  
+@keyframes boxAnimate {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes footerAnimate {
+    0% {
+        opacity: 0;
+        transform: translateX(1200px);
+    }
+
+    100% {
+        opacity: 100;
+
+    }
+}
+
+@keyframes hvadErViGodeTil {
+    0% {
+        opacity: 0;
+        transform: translateX(-1200px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

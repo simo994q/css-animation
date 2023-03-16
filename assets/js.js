@@ -3,7 +3,7 @@ const myFadeImg = document.getElementsByClassName("fadeImg");
 const aboutSection = document.getElementsByClassName('omDeGule')
 const footer = document.getElementById('footer')
 const goodSection = document.getElementsByClassName('goodSection')
-
+const nyhedsBrev = document.getElementsByClassName('nyhedsBrev')
 
 window.addEventListener('load', () => {
     console.log('loaded');
@@ -20,9 +20,23 @@ window.addEventListener('load', () => {
     for (const myElements of goodSection){
         myElements.classList.add('boxAnimate')
     }
-
+    for (const myElements of nyhedsBrev){
+        myElements.classList.add('boxAnimate')
+    }
 });
 
+const goodButton = document.getElementById('goodButton')
+const goodList = document.getElementsByClassName('goodList')
+const goodElements = document.getElementsByClassName('goodElement')
+
+goodButton.addEventListener('click', () => {
+    for (const myElements of goodList){
+        myElements.classList.toggle('listShow');
+    };
+    for (const myElements of goodElements){
+        myElements.classList.add('goodElementShow');
+    };
+})
 
 const button = document.getElementById('showButton');
 const text = document.getElementsByClassName('sectionText');
